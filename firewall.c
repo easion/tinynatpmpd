@@ -1,4 +1,10 @@
-
+/*
+ *   TinyNATPMPd: simple nat-pmp daemon for openwrt
+ *
+ *   Copyright 2015 Fu Hai Technology Co., Ltd
+ *     Author: easion,<easion@gmail.com>
+ *     Website: http://www.envcat.com/
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -41,12 +47,8 @@ static int execute(char *cmd_line, int quiet)
 		}
 		exit(21);
 	}
-
 	/* for the parent:      */
-	//LOG_DBG( "Waiting for PID %d to exit", pid);
 	rc = waitpid(pid, &status, 0);
-	//LOG_DBG( "Process PID %d exited", rc);
-
 	return (WEXITSTATUS(status));
 }
 
@@ -100,7 +102,6 @@ static int iptables_do_command(const char *format, ...)
 }
 
 /*
-delete_redirect_and_filter_rules
 */
 int _fw_delete_redir(unsigned short eport, int proto)
 {

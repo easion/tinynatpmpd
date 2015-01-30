@@ -1,4 +1,10 @@
-
+/*
+ *   TinyNATPMPd: simple nat-pmp daemon for openwrt
+ *
+ *   Copyright 2015 Fu Hai Technology Co., Ltd
+ *     Author: easion,<easion@gmail.com>
+ *     Website: http://www.envcat.com/
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
