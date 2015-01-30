@@ -5,6 +5,11 @@
  *     Author: easion,<easion@gmail.com>
  *     Website: http://www.envcat.com/
  */
+/* MiniUPnP project
+ * (c) 2007-2014 Thomas Bernard
+ * http://miniupnp.free.fr/ or http://miniupnp.tuxfamily.org/
+ * This software is subject to the conditions detailed
+ * in the LICENCE file provided within the distribution */
 
 #include <unistd.h>
 #include <string.h>
