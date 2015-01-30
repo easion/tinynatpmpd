@@ -21,20 +21,8 @@
 #define LOG_ERROR LOG_INFO
 
 struct natpmpd {
-	u_int8_t		 sc_flags;
-#define NATPMPD_F_VERBOSE	 0x01;
-
-	const char		*sc_confpath;
-	struct in_addr		 sc_address;
-#if 0
-	TAILQ_HEAD(listen_addrs, listen_addr)		 listen_addrs;
-	u_int8_t					 listen_all;
-	char		 	 sc_interface[IF_NAMESIZE];
-	struct timeval		 sc_starttime;
-	int			 sc_delay;
-#endif
-	struct event		 sc_announce_ev;
-	struct event		 sc_expire_ev;
+	u_int8_t		 flags;
+	const char		*config_path;	
 };
 
 
